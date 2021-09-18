@@ -1,0 +1,97 @@
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  background-color: var(--background-color-foot-and-hero);
+  text-decoration: none;
+}
+
+.footer-logo {
+  display: block;
+  width: 145px;
+  margin-bottom: 20px;
+}
+
+/* .footer .container {
+  margin-bottom: -94px;
+  margin-top: -94px;
+} */
+
+.studio {
+  color: var(--ptimary-lighte-color);
+}
+
+.adres {
+  font-family: Roboto;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.7;
+  text-decoration: none;
+
+  width: 231px;
+
+  .link {
+    color: rgba(255, 255, 255, 0.6);
+  }
+}
+
+.place {
+  color: var(--ptimary-lighte-color);
+  text-decoration: none;
+}
+
+.placed {
+  display: block;
+  margin-bottom: 9px;
+}
+
+.contacts-footer {
+  display: block;
+}
+
+.contacts.contacts-footer .item {
+  margin-bottom: 9px;
+  margin-left: 0;
+}
+
+.posicion-foot {
+  display: flex;
+  align-items: baseline;
+}
+
+.container-footer {
+  margin-right: 70px;
+}
+
+.soc-container-footer {
+  margin-right: auto;
+}
+
+.join {
+  font-family: Roboto;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.18;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: var(--ptimary-lighte-color);
+
+  margin-bottom: 20px;
+}
+
+.soc-footer {
+  background-color: rgba(255, 255, 255, 0.1);
+
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:focus {
+    background-color: var(--brand-color);
+  }
+}
+
+.icon-footer {
+  fill: var(--ptimary-lighte-color);
+}

@@ -1,0 +1,71 @@
+.form-field-footer {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.mailing-title {
+  display: block;
+  margin-bottom: 20px;
+
+  font-family: Roboto;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: var(--ptimary-lighte-color);
+}
+
+.input-footer {
+  width: 358px;
+  height: 50px;
+  margin-right: 12px;
+  padding-left: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  resize: none;
+  outline: none;
+  cursor: pointer;
+
+  background-color: var(--background-color-foot-and-hero);
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+
+  letter-spacing: 0.03em;
+
+  color: var(--ptimary-lighte-color);
+}
+
+.but-send {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  cursor: pointer;
+
+  width: 200px;
+  height: 50px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+
+  background-color: var(--brand-color);
+  color: var(--ptimary-lighte-color);
+}
+
+.icon-send {
+  display: block;
+  margin-left: 10px;
+  fill: var(--ptimary-lighte-color);
+}

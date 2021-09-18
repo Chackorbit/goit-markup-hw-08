@@ -1,0 +1,58 @@
+.work {
+  padding-bottom: 94px;
+
+  .header {
+    font-size: 36px;
+    line-height: 1.2;
+    text-align: center;
+  }
+}
+
+.our-work {
+  display: flex;
+  justify-content: center;
+
+  .item {
+    position: relative;
+    margin-right: 30px;
+
+    &:nth-last-child(3n + 1) {
+      margin-right: 0;
+    }
+  }
+}
+
+.container {
+  .header {
+    margin-bottom: 50px;
+  }
+}
+
+.box-bg {
+  position: absolute;
+  bottom: 7px;
+  left: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 70px;
+  background-color: rgba(47, 48, 58, 0.8);
+}
+
+.box-text {
+  /* position: absolute;
+  bottom: 5px;
+  left: 10px; */
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.13;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--ptimary-lighte-color);
+}
