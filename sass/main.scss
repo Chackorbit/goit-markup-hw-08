@@ -2,12 +2,15 @@
 @import "./base/reset";
 @import "./base/normalize";
 @import "./utils/hidden";
+@import "./components/components-portfolio/portfolio";
 @import "./components/logo";
 @import "./components/page-header";
+@import "./components/page-footer";
+@import "./components/form-footer";
+@import "./components/backdrop";
 @import "./components/modal";
 @import "./layout/hero";
 @import "./layout/benefits";
 @import "./layout/work";
 @import "./layout/our-team";
 @import "./layout/section-clients";
-@import "./components/components-portfolio/portfolio";

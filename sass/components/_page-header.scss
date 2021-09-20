@@ -31,18 +31,22 @@
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
-  /* margin-bottom: 94px; */
 
-  /* outline: 1px solid tomato; */
+  @media screen and (max-width: 480px) {
+    width: 480px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 .container {
   &.page-header__main-nav {
     margin-bottom: 0;
   }
-  &.cont-size {
-    width: 1200px;
-  }
+  // &.cont-size {
+  //   width: 1200px;
+  // }
 }
 
 .page-header {

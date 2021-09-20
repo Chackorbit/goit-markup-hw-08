@@ -1,34 +1,31 @@
 .work {
   padding-bottom: 94px;
+}
 
-  .header {
-    font-size: 36px;
-    line-height: 1.2;
-    text-align: center;
-  }
+.work__header {
+  font-size: 36px;
+  line-height: 1.2;
+  text-align: center;
 }
 
 .our-work {
   display: flex;
   justify-content: center;
+}
+.our-work__item {
+  position: relative;
+  margin-right: 30px;
 
-  .item {
-    position: relative;
-    margin-right: 30px;
-
-    &:nth-last-child(3n + 1) {
-      margin-right: 0;
-    }
+  &:nth-last-child(3n + 1) {
+    margin-right: 0;
   }
 }
 
-.container {
-  .header {
-    margin-bottom: 50px;
-  }
+.work__header {
+  margin-bottom: 50px;
 }
 
-.box-bg {
+.our-work__box-bg {
   position: absolute;
   bottom: 7px;
   left: 0;
@@ -41,7 +38,7 @@
   background-color: rgba(47, 48, 58, 0.8);
 }
 
-.box-text {
+.our-work__box-text {
   /* position: absolute;
   bottom: 5px;
   left: 10px; */
