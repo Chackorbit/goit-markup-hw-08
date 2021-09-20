@@ -55,7 +55,7 @@
             <section class="section portfolio">
                     <div class="container filtr-cont flex-container">
                         <h1 class="visually-hidden">Портфолио</h1>
-                            <ul class="filtr list">
+                            <ul class="filtr portfolio__list">
                                 <li class="button-item">
                                     <button type="button" class="button all">Все</button>
                                 </li>
@@ -77,7 +77,7 @@
                                 </li>
                             </ul>
                         
-                            <ul class="cards list flex-cards">
+                            <ul class="cards portfolio__list flex-cards">
                                 <li class="flex-element">
                                     <a class="link link-card" href="">
                                         <div class="overlay thumb">
@@ -248,60 +248,62 @@
                     </ul>
                 </address>
             </div>
+    
             <div class="soc-container-footer">
                 <p class="join">присоединяйтесь</p>
-                <ul class="social-links">
-                    <li class="soc-foot-item">
-                        <a href="" class="link soc-link soc-footer">
-                            <svg class="icon soc-icon icon-footer" width="20" height="20">
+                <ul class="footer__social-links">
+    
+                    <li class="footer__social-item">
+                        <a href="" class="link soc-footer">
+                            <svg class="icon icon-footer" width="20" height="20">
                                 <use href="./Img/symbol-defs.svg#icon-instagram-2"></use>
                             </svg>
                         </a>
                     </li>
     
-                    <li class="soc-foot-item">
-                        <a href="" class="link soc-link soc-footer">
-                            <svg class="icon soc-icon icon-footer" width="20" height="20">
+                    <li class="footer__social-item">
+                        <a href="" class="link soc-footer">
+                            <svg class="icon icon-footer" width="20" height="20">
                                 <use href="./Img/symbol-defs.svg#icon-twitter-1"></use>
                             </svg>
                         </a>
                     </li>
     
-                    <li class="soc-foot-item">
-                        <a href="" class="link soc-link soc-footer">
-                            <svg class="icon soc-icon icon-footer" width="20" height="20">
+                    <li class="footer__social-item">
+                        <a href="" class="link soc-footer">
+                            <svg class="icon icon-footer" width="20" height="20">
                                 <use href="./Img/symbol-defs.svg#icon-facebook-1"></use>
                             </svg>
                         </a>
                     </li>
     
-                    <li class="soc-foot-item">
-                        <a href="" class="link soc-link soc-footer">
-                            <svg class="icon soc-icon icon-footer" width="20" height="20">
+                    <li class="footer__social-item">
+                        <a href="" class="link soc-footer">
+                            <svg class="icon icon-footer" width="20" height="20">
                                 <use href="./Img/symbol-defs.svg#icon-linkedin-1"></use>
                             </svg>
                         </a>
                     </li>
                 </ul>
-
-                
+            </div>
+    
+            <div class="mailig">
+                <p class="mailing-title">
+                    Подпишитесь на рассылку
+                </p>
+                <div class="form-field-footer">
+                    <form action="#" class="form-field ">
+                        <label class="" for="footer-email"></label>
+                        <input class="input-footer" id="footer-email" type="email" name="email" placeholder="E-mail">
+                    </form>
+                    <button type="submit" class="but-send">
+                        Подписаться
+                        <svg class="icon-send" width="24" height="24">
+                            <use href="./Img/symbol-defs.svg#icon-icon-send"></use>
+                        </svg>
+                    </button>
                 </div>
-                    <div class="mailig">
-                        <p class="mailing-title">
-                            Подпишитесь на рассылку
-                        </p>
-                        <div class="form-field-footer">
-                            <form action="#" class="form-field ">
-                                <label class="" for="footer-email"></label>
-                                <input class="input-footer" id="footer-email" type="email" name="email" placeholder="E-mail">
-                            </form>
-                            <button type="submit" class="but-send">
-                                Подписаться
-                                <svg class="icon-send" width="24" height="24">
-                                    <use href="./Img/symbol-defs.svg#icon-icon-send"></use>
-                                </svg>
-                            </button>
-                        </div>
+    
             </div>
         </div>
     </footer>

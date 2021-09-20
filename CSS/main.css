@@ -379,6 +379,11 @@ summary {
   text-decoration: underline;
   text-decoration-color: var(--brand-color);
 } */
+.portfolio__list {
+  padding: 0;
+  list-style: none;
+}
+
 .filtr {
   display: -webkit-box;
   display: -ms-flexbox;

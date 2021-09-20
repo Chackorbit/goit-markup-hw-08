@@ -28,6 +28,11 @@
   text-decoration-color: var(--brand-color);
 } */
 
+.portfolio__list {
+  padding: 0;
+  list-style: none;
+}
+
 .filtr {
   display: flex;
   justify-content: center;
