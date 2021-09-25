@@ -1,17 +1,61 @@
 .section-benef {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  margin-right: auto;
+  margin-left: auto;
+
+  @media screen and (max-width: 480px) {
+    max-width: 480px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 768px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
+
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .benefits {
   display: flex;
   justify-content: center;
-  width: 100%;
+  flex-wrap: wrap;
+
+  @media screen and (max-width: 480px) {
+    max-width: 480px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 768px;
+  }
+  @media screen and (min-width: 1200px) {
+    flex-wrap: nowrap;
+    width: 1200px;
+  }
 }
 
 .benefits__item {
-  width: 270px;
-  margin-right: 30px;
+  max-width: 450px;
+  margin-bottom: 30px;
+
+  @media screen and (min-width: 768px) {
+    width: 354px;
+    flex-basis: calc(100% / 2 - 15px);
+
+    &:nth-child(2n + 1) {
+      margin-right: 30px;
+    }
+
+    &:nth-last-child(-n + 2) {
+      margin-bottom: 0;
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    width: 270px;
+    margin-right: 30px;
+    margin-bottom: 0;
+  }
 }
 
 .benefits__item:last-child {
@@ -23,6 +67,10 @@
 
 .benefits__header {
   margin-bottom: 10px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   font-size: 14px;
   line-height: 1.2;
@@ -36,6 +84,30 @@
   letter-spacing: 0.03em;
 
   color: var(--p-text-color);
+}
+
+.icon-benefits {
+  fill: var(--h-text-color);
+  text-align: center;
+}
+
+.benefits__cont-icon {
+  max-width: 450px;
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+
+  background: var(--bg-color);
+  border-radius: 4px;
+
+  @media screen and (min-width: 768px) {
+    width: 354px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 270px;
+  }
 }
 
 /* .benefits .item::before {
@@ -75,20 +147,3 @@
   background-position: center;
   background-repeat: no-repeat;
 } */
-
-.icon-benefits {
-  fill: var(--h-text-color);
-  text-align: center;
-}
-
-.benefits__cont-icon {
-  width: 270px;
-  height: 120px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 30px;
-
-  background: var(--bg-color);
-  border-radius: 4px;
-}

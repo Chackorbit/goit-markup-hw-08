@@ -22,7 +22,7 @@
 <body>
 
     <!-- Шапка  -->
-    <header class="page-header">
+    <!-- <header class="page-header">
         <div class="container main-nav cont-size">
             <nav class="main-nav">
                 <div class="logohead"><a class="logo" href="index.html">Web<span class="studio-head">Studio</span></a></div>
@@ -51,14 +51,14 @@
                 </li>
             </ul>
         </div>
-    </header>
+    </header> -->
 
     <main>
 
         <!-- Герой -->
             <section class="hero">
                 <div class="container cont-size cont-hero">
-                    <h1 class="hero__heading">Эффективные решения <br> для вашего бизнеса</h1>
+                    <h1 class="hero__heading">Эффективные решения  для вашего бизнеса</h1>
                     <button type="button" class="hero__button" data-modal-open>Заказать услугу</button>
                 </div>
                 <div class="backdrop is-hidden" data-modal>
@@ -210,7 +210,13 @@
                 <ul class="list our-team">
 
                     <li class="our-team__item item-media">
-                        <img class="our-team__img" src="./Img/OurTeam/img-(1).jpg" alt="img-1" width="270" height="260">
+                        <img class="our-team__img" srcset="
+                        ./Img/OurTeam/igor/tel-igor@1x-min.jpg 1x,
+                        ./Img/OurTeam/igor/tel-igor@2x-min.jpg 2x" 
+                        src="./Img/OurTeam/img-(1).jpg" 
+                        alt="img-1"
+                        sizes="100vw">
+
                         <div class="our-team__text">
                             <h3 class="name">Игорь Демьяненко</h3>
                             <p class="our-team__tittle">Product Designer</p>
@@ -253,7 +259,12 @@
                     </li>
                 
                     <li class="our-team__item item-media">
-                        <img class="our-team__img" src="./Img/OurTeam/img-(2).jpg" alt="img-2" width="270" height="260">
+                        <img class="our-team__img" 
+                        srcset="./Img/OurTeam/olga/tel-olga@1x-min.jpg 1x, 
+                        ./Img/OurTeam/olga/tel-olga@2x-min.jpg 2x"
+                        src="./Img/OurTeam/img-(2).jpg" 
+                        alt="img-2"
+                        sizes="100vw">
                         <div class="our-team__text">
                             <h3 class="name">Ольга Репина</h3>
                             <p class="our-team__tittle">Frontend Developer</p>
@@ -296,7 +307,12 @@
                     </li>
                 
                     <li class="our-team__item item-media">
-                        <img class="our-team__img" src="./Img/OurTeam/img-(3).jpg" alt="img-3" width="270" height="260">
+                        <img class="our-team__img" 
+                        srcset="./Img/OurTeam/nikolay/tel-nikolay@1x-min.jpg 1x,
+                        ./Img/OurTeam/nikolay/tel-nikolay@2x-min.jpg 2x"
+                        src="./Img/OurTeam/img-(3).jpg" 
+                        alt="img-3"
+                        sizes="100vw">
                         <div class="our-team__text">
                             <h3 class="name">Николай Тарасов</h3>
                             <p class="our-team__tittle">Marketing</p>
@@ -339,7 +355,14 @@
                     </li>
                 
                     <li class="our-team__item item-media">
-                        <img class="our-team__img" src="./Img/OurTeam/img-(4).jpg" alt="img-4" width="270" height="260">
+                        <img class="our-team__img"
+                        srcset=" 
+                        ./Img/OurTeam/misha/tel-misha@1x-min.jpg 1x, 
+                        ./Img/OurTeam/misha/tel-misha@2x-min.jpg 2x" 
+                        src="./Img/OurTeam/misha/tel-misha@1x-min.jpg"
+                        alt="img-4"
+                        sizes="100vw">
+
                         <div class="our-team__text">
                             <h3 class="name">Михаил Ермаков</h3>
                             <p class="our-team__tittle">UI Designer</p>
@@ -441,10 +464,11 @@
                 </ul>
             </div>
         </section>
+    
     </main>
 
     <!-- Футер -->
-    <footer class="footer">
+    <!-- <footer class="footer">
         <div class="container posicion-foot">
             <div class=" container-footer">
                 <a class="logo footer-logo" href="">Web<span class="studio">Studio</span></a>
@@ -496,7 +520,7 @@
                 </ul>
             </div>
 
-            <div class="mailig">
+            <div class="mailing">
                 <p class="mailing-title">
                     Подпишитесь на рассылку
                 </p>
@@ -515,7 +539,7 @@
                 
             </div>
         </div>
-    </footer>
+    </footer> -->
 
 
 <script src="./js/modal.js"></script>
