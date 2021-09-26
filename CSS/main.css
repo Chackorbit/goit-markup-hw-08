@@ -1483,8 +1483,8 @@ summary {
   height: auto;
   margin-right: auto;
   margin-left: auto;
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../Img/fon/Img-min.jpg");
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../Img/fon/Img-min.jpg");
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../../Img/fon/tel-img@1x-min.jpg");
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../Img/fon/tel-img@1x-min.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -1492,8 +1492,6 @@ summary {
 
 @media screen and (min-width: 320px) {
   .hero {
-    max-width: 480px;
-    max-height: 400px;
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../../Img/fon/tel-img@1x-min.jpg);
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../Img/fon/tel-img@1x-min.jpg);
     background-repeat: no-repeat;
