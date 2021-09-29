@@ -1,8 +1,10 @@
 .content {
-  width: 1200px;
-  justify-content: center;
-  margin-right: auto;
-  margin-left: auto;
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
+    justify-content: center;
+    margin-right: auto;
+    margin-left: auto;
+  }
 }
 
 .filtr-cont {
@@ -35,19 +37,31 @@
 
 .filtr {
   display: flex;
-  justify-content: center;
+  justify-content: start;
+  flex-wrap: wrap;
 
-  /* font-weight: 500;
-  font-size: 16px;
-  line-height: 1.62;
+  width: 450px;
+  margin-bottom: 40px;
 
-  text-align: center;
-  letter-spacing: 0.03em; */
-  margin-bottom: 50px;
+  @media screen and (min-width: 768px) {
+    width: 620px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
+  }
 }
 
 .button-item {
   margin-right: 8px;
+  margin-bottom: 15px;
+
+  &:nth-last-child(-n + 2) {
+    margin-bottom: 0;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 0;
+  }
 }
 
 .button-item:last-child {
@@ -113,13 +127,20 @@
 }
 
 .container.flex-container {
-  width: 1200px;
+  width: 450px;
   padding-right: 15px;
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
 
   justify-content: center;
+
+  @media screen and (min-width: 768px) {
+    width: 768px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
+  }
 }
 
 .flex-cards {
@@ -128,15 +149,34 @@
 
   margin-right: -30px;
   margin-bottom: -30px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .flex-cards .flex-element {
-  flex-basis: calc(100% / 3 - 30px);
+  @media screen and (min-width: 768px) {
+    flex-basis: calc(100% / 2 - 30px);
+  }
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc(100% / 3 - 30px);
+  }
 }
 
 .flex-element {
   margin-right: 30px;
   margin-bottom: 30px;
+
+  @media screen and (min-width: 300px) and (max-width: 767px) {
+    max-width: 450px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 354px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 270px;
+  }
 }
 
 /* .flex-element:nth-child(3n) {
@@ -145,6 +185,12 @@
 
 .flex-element:nth-last-child(-n + 3) {
   margin-bottom: 30px;
+}
+
+.portfolio__img {
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
 /* .flex-element:hover,
