@@ -1067,7 +1067,7 @@ summary {
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
-  .contacts {
+  .contacts.cont-list {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1080,7 +1080,7 @@ summary {
 }
 
 @media screen and (min-width: 768px) {
-  .contacts .link {
+  .contacts.cont-list .link {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1100,13 +1100,13 @@ summary {
     -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
             transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
-  .contacts .link:hover, .contacts .link:focus {
+  .contacts.cont-list .link:hover, .contacts.cont-list .link:focus {
     color: var(--brand-color);
   }
 }
 
 @media screen and (min-width: 1200px) {
-  .contacts .link {
+  .contacts.cont-list .link {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1211,6 +1211,14 @@ summary {
   color: rgba(255, 255, 255, 0.6);
 }
 
+@media screen and (min-width: 1200px) {
+  .adres {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+  }
+}
+
 .place {
   color: var(--ptimary-lighte-color);
   text-decoration: none;
@@ -1233,6 +1241,14 @@ summary {
           align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+}
+
+@media screen and (min-width: 1200px) {
+  .contacts-footer {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+  }
 }
 
 .cont-foot-item {
@@ -1296,6 +1312,7 @@ summary {
   .container-footer {
     margin-right: 70px;
     margin-bottom: 0;
+    margin-left: 0;
   }
 }
 
@@ -1319,6 +1336,12 @@ summary {
 }
 
 .join {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   font-family: Roboto;
   font-weight: 700;
   font-size: 14px;
@@ -1434,6 +1457,7 @@ summary {
 
 @media screen and (min-width: 768px) {
   .mailing {
+    width: 450px;
     margin-right: auto;
     margin-left: auto;
   }
@@ -1530,12 +1554,14 @@ summary {
 @media screen and (min-width: 768px) {
   .input-footer {
     width: 450px;
+    margin-bottom: 20px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .input-footer {
     width: 358px;
+    margin-bottom: 0;
   }
 }
 
