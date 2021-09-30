@@ -1,7 +1,7 @@
 .modal {
   position: relative;
-  max-width: 450px;
-  max-height: 609px;
+
+  height: auto;
   padding: 40px;
 
   background: #ffffff;
@@ -11,6 +11,9 @@
 
   transition: transform 250ms var(--timing-function);
 
+  @media screen and (min-width: 320px) and (max-width: 767px) {
+    max-width: 450px;
+  }
   @media screen and (min-width: 468px) {
     position: absolute;
     top: 50%;
@@ -18,7 +21,7 @@
     transform: translate(-50%, -50%) scaleX(1);
 
     width: 450px;
-    height: 609px;
+    height: auto;
   }
   @media screen and (min-width: 768px) {
     position: absolute;
@@ -27,7 +30,7 @@
     transform: translate(-50%, -50%) scaleX(1);
 
     width: 450px;
-    height: 609px;
+    height: auto;
   }
 
   @media screen and (min-width: 1200px) {
@@ -37,7 +40,6 @@
     transform: translate(-50%, -50%) scaleX(1);
 
     width: 528px;
-    min-height: 581px;
   }
 }
 
@@ -173,18 +175,24 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
   margin-bottom: 30px;
   cursor: pointer;
 
   font-family: Roboto;
   font-style: normal;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.16;
 
   letter-spacing: 0.03em;
 
   color: var(--p-text-color);
+
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }
 
 .checkbox {
@@ -193,9 +201,9 @@
 }
 
 .check-text {
+  display: inline-block;
   margin-right: 7px;
 
-  display: inline-block;
   width: 16px;
   height: 15px;
   border: 2px solid var(--h-text-color);
@@ -219,6 +227,18 @@
 }
 
 .modal-but-submit {
+  color: var(--ptimary-lighte-color);
+  background-color: var(--brand-color);
+  padding: 10px 32px;
+
+  min-width: 200px;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  text-align: center;
+  letter-spacing: 0.06em;
+
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   transition: background-color 250ms var(--timing-function);
 
