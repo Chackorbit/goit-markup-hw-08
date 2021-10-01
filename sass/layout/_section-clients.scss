@@ -13,6 +13,11 @@
 
 .container-clients {
   text-align: center;
+
+  @media screen and (min-width: 1200px) {
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
 
 .tittle-clients {
@@ -41,11 +46,9 @@
     flex-wrap: wrap;
   }
   @media screen and (min-width: 768px) {
-    width: 768px;
     flex-wrap: wrap;
   }
   @media screen and (min-width: 1200px) {
-    width: 1200px;
     flex-wrap: nowrap;
   }
 }
@@ -81,6 +84,7 @@
   @media screen and (min-width: 1200px) {
     width: 170px;
     margin-bottom: 0;
+    flex-basis: 0px;
 
     &:nth-child(3n) {
       margin-right: 30px;

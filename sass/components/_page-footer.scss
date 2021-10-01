@@ -15,6 +15,10 @@
     margin-right: auto;
     margin-left: auto;
   }
+  @media screen and (min-width: 1200px) {
+    margin-right: 0;
+    margin-left: 0;
+  }
 }
 
 /* .footer .container {
@@ -141,6 +145,10 @@
   color: var(--ptimary-lighte-color);
 
   margin-bottom: 20px;
+
+  @media screen and (min-width: 1200px) {
+    justify-content: start;
+  }
 }
 
 .footer__social-links {
