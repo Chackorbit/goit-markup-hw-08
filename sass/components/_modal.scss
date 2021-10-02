@@ -227,6 +227,8 @@
 }
 
 .modal-but-submit {
+  display: block;
+  margin: 0 auto;
   color: var(--ptimary-lighte-color);
   background-color: var(--brand-color);
   padding: 10px 32px;

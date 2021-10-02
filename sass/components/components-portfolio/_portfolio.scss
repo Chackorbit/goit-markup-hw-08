@@ -171,6 +171,8 @@
 }
 
 .flex-element {
+  border: 1px solid var(--bg-cards);
+  border-top: none;
   margin-right: 30px;
   margin-bottom: 30px;
 
@@ -210,13 +212,12 @@
 .info-card {
   padding: 24px 20px;
   margin-top: -5px;
-  border: 1px solid var(--bg-cards);
-  border-top: none;
 }
 
 .link-card {
   display: block;
   text-decoration: none;
+  height: 100%;
 
   transition: box-shadow 250ms linear;
 }

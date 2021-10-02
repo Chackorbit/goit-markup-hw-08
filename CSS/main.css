@@ -548,6 +548,8 @@ summary {
 }
 
 .flex-element {
+  border: 1px solid var(--bg-cards);
+  border-top: none;
   margin-right: 30px;
   margin-bottom: 30px;
 }
@@ -591,13 +593,12 @@ summary {
 .info-card {
   padding: 24px 20px;
   margin-top: -5px;
-  border: 1px solid var(--bg-cards);
-  border-top: none;
 }
 
 .link-card {
   display: block;
   text-decoration: none;
+  height: 100%;
   -webkit-transition: -webkit-box-shadow 250ms linear;
   transition: -webkit-box-shadow 250ms linear;
   transition: box-shadow 250ms linear;
@@ -771,7 +772,7 @@ summary {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   background-color: #ffffff;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
@@ -782,6 +783,12 @@ summary {
   pointer-events: none;
   -webkit-transition: opacity 250ms var(--timing-function);
   transition: opacity 250ms var(--timing-function);
+}
+
+@media screen and (min-width: 768px) {
+  .menu-container {
+    display: none;
+  }
 }
 
 .btn-close-menu {
@@ -798,6 +805,12 @@ summary {
       flex-wrap: wrap;
   pointer-events: visible;
   opacity: 1;
+}
+
+@media screen and (min-width: 768px) {
+  .menu-container.is-open {
+    display: none;
+  }
 }
 
 /* main nav */
@@ -1287,6 +1300,10 @@ summary {
   text-decoration: none;
 }
 
+.place:hover, .place:focus {
+  color: var(--brand-color);
+}
+
 .placed {
   display: block;
   margin-bottom: 9px;
@@ -1317,6 +1334,11 @@ summary {
 .cont-foot-item {
   margin-bottom: 9px;
   margin-left: 0;
+}
+
+.cont-foot-item .link:focus,
+.cont-foot-item .link:hover {
+  color: var(--brand-color);
 }
 
 .posicion-foot {
@@ -1445,7 +1467,7 @@ summary {
   margin-right: 10px;
 }
 
-.footer__social-item .link {
+.footer__social-item .soc-footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1467,7 +1489,7 @@ summary {
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.footer__social-item .link:hover, .footer__social-item .link:focus {
+.footer__social-item .soc-footer:hover, .footer__social-item .soc-footer:focus {
   background-color: var(--brand-color);
 }
 
@@ -1926,6 +1948,8 @@ summary {
 }
 
 .modal-but-submit {
+  display: block;
+  margin: 0 auto;
   color: var(--ptimary-lighte-color);
   background-color: var(--brand-color);
   padding: 10px 32px;
@@ -2060,23 +2084,27 @@ summary {
   cursor: pointer;
 }
 
-@media screen and (min-width: 320px) {
+@media screen and (min-width: 320px) and (max-width: 767px) {
   .cont-hero {
-    max-width: 480px;
+    max-width: 450px;
   }
 }
 
 @media screen and (min-width: 768px) {
   .cont-hero {
-    width: 768px;
+    width: 450px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .cont-hero {
+    width: 744px;
   }
 }
 
 .section-benef {
   padding-top: 60px;
   padding-bottom: 60px;
-  margin-right: auto;
-  margin-left: auto;
 }
 
 @media screen and (max-width: 480px) {
@@ -2085,15 +2113,8 @@ summary {
   }
 }
 
-@media screen and (min-width: 768px) {
-  .section-benef {
-    width: 768px;
-  }
-}
-
 @media screen and (min-width: 1200px) {
   .section-benef {
-    width: 1200px;
     padding-top: 94px;
     padding-bottom: 94px;
   }

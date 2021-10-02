@@ -57,6 +57,11 @@
 .place {
   color: var(--ptimary-lighte-color);
   text-decoration: none;
+
+  &:hover,
+  &:focus {
+    color: var(--brand-color);
+  }
 }
 
 .placed {
@@ -78,6 +83,11 @@
 .cont-foot-item {
   margin-bottom: 9px;
   margin-left: 0;
+
+  .link:focus,
+  .link:hover {
+    color: var(--brand-color);
+  }
 }
 
 .posicion-foot {
@@ -170,7 +180,7 @@
 }
 
 .footer__social-item {
-  .link {
+  .soc-footer {
     display: flex;
     justify-content: center;
     align-items: center;
