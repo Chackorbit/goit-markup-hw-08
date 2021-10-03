@@ -43,9 +43,13 @@
   position: absolute;
   top: 10px;
   right: 15px;
-
+  background-color: #fff;
   margin-right: auto;
   margin-left: auto;
+
+  &:focus svg {
+    fill: var(--brand-color);
+  }
 
   @media screen and (min-width: 768px) {
     display: none;
@@ -79,6 +83,11 @@
   position: absolute;
   top: 10px;
   right: 15px;
+  background-color: #fff;
+
+  &:focus svg {
+    fill: var(--brand-color);
+  }
 }
 
 .menu-container.is-open {

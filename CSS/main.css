@@ -759,8 +759,13 @@ summary {
   position: absolute;
   top: 10px;
   right: 15px;
+  background-color: #fff;
   margin-right: auto;
   margin-left: auto;
+}
+
+.menu-button:focus svg {
+  fill: var(--brand-color);
 }
 
 @media screen and (min-width: 768px) {
@@ -799,6 +804,11 @@ summary {
   position: absolute;
   top: 10px;
   right: 15px;
+  background-color: #fff;
+}
+
+.btn-close-menu:focus svg {
+  fill: var(--brand-color);
 }
 
 .menu-container.is-open {
