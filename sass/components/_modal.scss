@@ -172,7 +172,7 @@
 }
 
 .check-label {
-  display: flex;
+  display: inline-block;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
@@ -190,6 +190,7 @@
   color: var(--p-text-color);
 
   @media screen and (min-width: 1200px) {
+    display: flex;
     font-size: 14px;
     line-height: 1.71;
   }
@@ -202,12 +203,17 @@
 
 .check-text {
   display: inline-block;
-  margin-right: 7px;
+  margin-right: 8px;
 
   width: 16px;
   height: 15px;
   border: 2px solid var(--h-text-color);
   border-radius: 2px;
+}
+
+.check-icon {
+  display: inline-block;
+  margin-bottom: -4px;
 }
 
 .checkbox:checked + .check-text {
@@ -221,6 +227,7 @@
 
 .link-agreement {
   display: inline-block;
+  margin-left: 3px;
 
   text-decoration-line: underline;
   color: var(--brand-color);

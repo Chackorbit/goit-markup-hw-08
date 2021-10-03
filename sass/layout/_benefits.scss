@@ -24,12 +24,9 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-
-    width: 768px;
   }
   @media screen and (min-width: 1200px) {
     flex-wrap: nowrap;
-    width: 1200px;
   }
 }
 
